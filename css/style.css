@@ -55,7 +55,7 @@ body.site #site-header {
 body.site #site-footer {
   color: white;
   padding: 60px 0;
-  background: #111;
+  background: tomato;
 }
 
 body.site #site-main {
