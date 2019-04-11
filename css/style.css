@@ -195,7 +195,7 @@ body.site section.projects .label {
   top: 0;
   width: 100%;
   color: white;
-  background: black;
+  background: tomato;
 }
 
 body.site section.projects .label a {
