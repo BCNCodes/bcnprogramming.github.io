@@ -1,0 +1,209 @@
+/* ---- reset ---- */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* ---- typography ---- */
+
+body.site {
+  color: #111;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 147%;
+}
+
+body.site h1 {}
+
+body.site h2 {
+  margin-top: 0;
+}
+
+body.site h3 {}
+
+body.site p {
+  margin: 0;
+}
+
+body.site #site-header nav li a{
+  color: white;
+}
+
+
+
+/* ---- layout ---- */
+
+body.site #site-header {
+  padding: 30px 0;
+  color: white;
+  background: #111;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body.site #site-footer {
+  color: white;
+  padding: 60px 0;
+  background: #111;
+}
+
+body.site #site-main {
+  margin-bottom: 60px;
+  padding-top: 20px;
+}
+
+body.site .container {
+  margin: 0 20px;
+}
+
+body.site .section {
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+
+@media (min-width: 768px) {
+  body.site .container {
+    max-width: 728px;
+    margin: 0 auto;
+  }
+
+  body.site .section {
+    margin-bottom: 30px;
+    padding-top: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  body.site .row {
+    overflow:hidden
+  }
+
+  body.site .cols-2 {
+    width: 50%;
+    float: left;
+  }
+
+}
+
+/* ---- components navbar ---- */
+
+body.site #site-header nav ul{
+  list-style: none;
+  padding-right: 10px;
+}
+
+body.site #site-header nav ul li{
+  display: inline-block;
+}
+
+
+/* ---- components expandable ---- */
+
+
+body.site .expandable .handler {
+  cursor: pointer;
+}
+
+body.site .expandable .expand {
+  display: inline;
+}
+
+body.site .expandable .collapse {
+  display: none;
+}
+
+body.site .expandable .handler:hover {
+  background-color: #ccc;
+}
+
+body.site .expandable .content {
+  display: none;
+}
+
+body.site .expandable.expanded .content {
+  display: block;
+}
+
+
+body.site .expandable.expanded .expand {
+  display: none;
+}
+
+body.site .expandable.expanded .collapse {
+  display: inline;
+}
+
+/* ---- components gallery ---- */
+
+body.site .gallery {
+  list-style: none;
+  padding: 0;
+}
+
+body.site .gallery .photo {
+  margin-bottom: 30px;
+}
+
+body.site .gallery img {
+  width: 100%;
+  min-height: 200px;
+  background-color: #ccc;
+}
+
+body.site .gallery .label {
+  padding: 10px 0;
+  font-size: 20px;
+}
+
+
+
+/* ---- sections links ---- */
+
+body.site section.links {
+  background-color: lightgray;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* ---- sections projects ---- */
+
+body.site section.projects .photo {
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+  text-align: center;
+}
+
+body.site section.projects img {
+  width: auto;
+  height: 100%;
+}
+
+body.site section.projects .label {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  color: white;
+  background: black;
+}
+
+body.site section.projects .label a {
+  color: white; 
+}
+
+body.site section.projects .next {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
